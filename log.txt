@@ -1,0 +1,52 @@
+2.6
+Create folder activity_sample, containing hard formulae with size 200.
+Change Minisat such that it prints out the activity values of each variables.
+Write get_activity.py to run minisat on several formulae and save the results as a txt file.
+
+2.8
+Create get_activity_same_formulae.py to run minisat on a formulae with a given random seed that results in different initial activity values.
+Save the *normalized* activity value (scale to the largest) of each variable.
+Run same formulae 10000 times.
+Find that some variables have very high activity value and some have low.
+SAT formulae have variables with 70+ activity values, UNSAT formulae does not.
+
+2.10
+Create get_average.py that takes in a matrix and save the average value of each column as an array to an output file
+Decide to focus on SAT formulae
+
+
+2.15
+Write count_var_freq.py to count the frequency of a variable in a formulae. 
+Test whether the activity is related to frequency
+
+2.24
+Create ranked_var_act_conflicts.csv with sorted conflicts and sorted activities, for formula 2
+
+3.24
+Create minisat_act_temp to get the change of activity during SAT-solving of a particular variable.
+Look at community struture and the relationship between high activity variable and graph features.
+
+3.29
+Create get_activity_change_over_time which save as a comma separated file the change of all variables over each branch moment
+Create get_top_5.py to get the variables with top 5 activity values.
+create get_bottom_5.py to get the variables with least 5 activity values.
+
+3.30
+create analyze_formula.py to compute the VIG, VCG degree, occurence and balance feature of each variable in a formula.
+Check pearson correlation between final activity values (FAV) and the three features above.
+Pearson's correlation coefficient between FAV and VIG degree: 0.759632804798
+Pearson's correlation coefficient between FAV and Occurrence degree: 0.74563515759
+Pearson's correlation coefficient between FAV and imbalancy: -0.307773892014
+
+Conclusion: 
+1. VSIDS algorithm strongly favors variables with high VIG degree, and occurrence
+
+4.6
+Create minisat_constrains. and pick variables randomly at each branching level. Perform way worse than normal.
+Change minisat_constrains. to set backbone correctly n% of the time, and 1-n% of the time wrongly. Behavior matches vanilla minisat at n = 75%.
+Change minisat_constrains. to set backbone correctly n% of the time, and 1-n% of the time normally.
+add a "-bb-rat" flag that can be set to a double between [0, 1]
+
+4.7
+Create minisat_var_rank. Replace VISDS with VIG_degree ranking.
+Modify analyze_formula.py, now save VIG-degree to a file named "degrees.txt"

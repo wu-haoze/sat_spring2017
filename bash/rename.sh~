@@ -1,0 +1,7 @@
+var=1
+for file in *.cnf
+do
+    mv $file $var.cnf
+    ((var++))
+done
+

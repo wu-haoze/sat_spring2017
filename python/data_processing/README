@@ -1,0 +1,14 @@
+average.py
+
+  Usage: python average.py <in_file_name> <out_file_name>
+
+  Description: takes in a spaced separated data file, compute the mean of each column and add the resulting
+   list as a line to the out_file.
+
+skewedness.py
+
+  Usage: python skewness.py <in_file_name> <out_file_name>
+
+  Description: takes in a data file, each line of which is a "title" followed by data. Compute the skewedness
+   and kurtosis of each line and append the result to the out_file as a line like the follows:
+     "title" skewness kurtosis 

@@ -1,0 +1,44 @@
+Overview: most of the changes are in core/Solver.cc and core/Solver.h; the main
+ makefile is mtl/template.mk.
+
+To build the executable for, say, minisat_act:
+
+1. cd minisat_act
+2. export MROOT=$PWD
+3. cd core
+4. make
+
+The compilation should work fine on Linux, but for macOS some tweaks of the code
+is required, just follow the error message of the compiler.
+
+
+minisat_act
+
+Prints out the final activity values of each variable.
+
+
+minisat_act_all
+
+Prints out the activity values of each variable whenever a branching variable
+ is picked.
+
+
+minisat_var_rank
+
+Replaces the VISDS heuristic with a heuristic that picks the variable with the
+ highest activity score.
+
+
+minisat_pick_backbone
+
+Set the backbones correctly with probability a, the value of a is a parameter
+ for minisat (i.e.:
+ 	 ./minisat bb-rat=<value between 0 to 1> <dimacs_file>).
+The default value of a is 1.
+
+Usage: to run minisat_constrain_top on a formula, first run backbones.py on that
+ formula, copy the output on the console and replace line 56 of core/Solver.cc
+ with it.
+
+ One can also run minisat_pick_backbone with minisat_pick_backbone.py
+	

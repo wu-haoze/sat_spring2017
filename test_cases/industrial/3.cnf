@@ -1,0 +1,221 @@
+c ****************************************************************
+c **           This is a Sat-2005 Competition instance          **
+c ****************************************************************
+c N.B. This header has been added to the file after the competition
+c Please do contact L. Simon for more informations (simon@lri.fr)
+c 
+c Bench submitted by 
+c    Frederic Maris (maris@irit.fr)
+c 
+c The original name of this formula was: 
+c    industrial/maris05/Depots/depots1_v01a.cnf
+
+c Category
+c    industrial
+c The name used during the competition was: 
+c     /benchs/industrial/set7/subset1/sat05-3946.cnf
+c 
+c CPU time of solvers on this bench during the first stage 
+c  (demonstration solvers are annoted with a (*)):
+c   +---------------------+---------+--------+
+c   | Solver              | Time    | Answer |
+c   +---------------------+---------+--------+
+c   | adaptnovelty        |    0.00 |   SAT  |
+c   | CirCUsA(*)          |    0.00 |   SAT  |
+c   | CirCUsB(*)          |    0.00 |   SAT  |
+c   | compsat             |    0.00 |   SAT  |
+c   | csat                |    0.00 |   SAT  |
+c   | Dew_Satz_1c         |    0.00 |   SAT  |
+c   | eureka_A(*)         |    0.00 |   SAT  |
+c   | eureka_B(*)         |    0.00 |   SAT  |
+c   | eureka_C(*)         |    0.00 |   SAT  |
+c   | g2wsat              |    0.00 |   SAT  |
+c   | HaifaSat            |    0.00 |   SAT  |
+c   | HaifaSat2           |    0.00 |   SAT  |
+c   | hsat.1              |    0.00 |   SAT  |
+c   | hsat.5              |    0.00 |   SAT  |
+c   | hsatrr              |    0.00 |   SAT  |
+c   | Jerusat1.31_A       |    0.00 |   SAT  |
+c   | Jerusat1.31_B       |    0.00 |   SAT  |
+c   | kcnfs(*)            |    0.00 |   SAT  |
+c   | kcnfs-2004          |    0.00 |   SAT  |
+c   | march_dl            |    0.00 |   SAT  |
+c   | midisat_static(*)   |    0.00 |   SAT  |
+c   | minisat_static      |    0.00 |   SAT  |
+c   | saps                |    0.00 |   SAT  |
+c   | SatELiteGTI         |    0.00 |   SAT  |
+c   | vallst.sh           |    0.00 |   SAT  |
+c   | vw                  |    0.00 |   SAT  |
+c   | zchaff              |    0.00 |   SAT  |
+c   | zchaff_rand         |    0.00 |   SAT  |
+c   | CirCUsD(*)          |    0.01 |   SAT  |
+c   | lsatv1.1            |    0.01 |   SAT  |
+c   | Dew_Satz_1a         |    0.03 |   SAT  |
+c   | rpaws10             |    0.03 |   SAT  |
+c   | rpaws5(*)           |    0.03 |   SAT  |
+c   | rrsaps              |    0.03 |   SAT  |
+c   | Dew_Satz_1b         |    0.04 |   SAT  |
+c   | Dew_Satz_1d(*)      |    0.04 |   SAT  |
+c   | Dew_Satz_1e(*)      |    0.04 |   SAT  |
+c   | ranov               |    0.04 |   SAT  |
+c   | rpaws40(*)          |    0.04 |   SAT  |
+c   | tts-3-0             |    0.12 |   SAT  |
+c   | wllsatv1            |    0.14 |   SAT  |
+c   | sat4j.jar           |    0.26 |   SAT  |
+c   | SatELite_release(*) | 1200.00 |   --   |
+c   +---------------------+---------+--------+
+c
+p cnf 48 153
+1 0
+2 0
+-3 4 0
+-5 6 0
+-7 8 0
+-9 4 0
+-9 6 0
+-9 8 0
+-9 10 0
+-11 12 0
+-13 14 0
+-15 16 0
+-17 18 0
+-19 20 0
+-19 14 0
+-21 22 0
+-23 24 0
+-25 26 0
+-27 12 0
+-27 12 0
+-28 10 0
+-29 20 0
+-29 24 0
+-30 31 0
+-32 26 0
+-33 24 0
+-34 22 0
+-35 26 0
+-35 12 0
+-36 14 0
+-37 18 0
+-38 16 0
+-39 40 0
+-41 18 0
+-41 12 0
+-42 3 27 0
+-42 5 27 0
+-42 7 27 0
+-42 27 28 35 41 0
+-43 9 11 0
+-44 13 15 17 0
+-44 19 0
+-44 27 28 35 41 0
+-45 21 23 25 0
+-45 27 28 35 41 0
+-45 29 0
+-46 30 0
+-47 32 33 34 0
+-47 35 0
+-47 39 0
+-48 36 37 38 0
+-48 39 0
+-48 41 0
+-2 42 43 0
+-2 44 45 0
+-1 46 0
+-1 47 48 0
+-22 -24 0
+-26 -24 0
+-26 -22 0
+-14 -16 0
+-14 -18 0
+-18 -16 0
+-12 -4 0
+-12 -6 0
+-12 -8 0
+-12 -10 0
+-9 -3 0
+-9 -5 0
+-9 -7 0
+-9 -28 0
+-11 -3 0
+-11 -5 0
+-11 -7 0
+-11 -9 0
+-11 -28 0
+-13 -15 0
+-13 -36 0
+-13 -38 0
+-15 -38 0
+-17 -13 0
+-17 -15 0
+-17 -19 0
+-17 -36 0
+-17 -38 0
+-19 -15 0
+-19 -29 0
+-19 -38 0
+-21 -23 0
+-21 -25 0
+-21 -29 0
+-21 -32 0
+-21 -33 0
+-21 -34 0
+-21 -35 0
+-23 -33 0
+-25 -23 0
+-25 -29 0
+-25 -33 0
+-27 -3 0
+-27 -5 0
+-27 -7 0
+-27 -9 0
+-27 -11 0
+-27 -28 0
+-32 -23 0
+-32 -25 0
+-32 -29 0
+-32 -33 0
+-34 -23 0
+-34 -25 0
+-34 -29 0
+-34 -32 0
+-34 -33 0
+-34 -35 0
+-35 -3 0
+-35 -5 0
+-35 -7 0
+-35 -9 0
+-35 -23 0
+-35 -27 0
+-35 -28 0
+-35 -29 0
+-35 -33 0
+-35 -41 0
+-36 -15 0
+-36 -38 0
+-37 -13 0
+-37 -15 0
+-37 -17 0
+-37 -19 0
+-37 -36 0
+-37 -38 0
+-41 -3 0
+-41 -5 0
+-41 -7 0
+-41 -9 0
+-41 -13 0
+-41 -15 0
+-41 -19 0
+-41 -27 0
+-41 -28 0
+-41 -36 0
+-41 -38 0
+-43 -42 0
+-44 -42 0
+-44 -48 0
+-45 -42 0
+-45 -44 0
+-45 -47 0
+-47 -42 0
+-48 -42 0
+-48 -47 0

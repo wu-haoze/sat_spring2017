@@ -1,0 +1,26 @@
+degrees.txt: the VIG degrees of each variables of all formulas.
+
+
+num_conflicts_normal.txt: the number of conflicts and runtime of vanilla minisat
+ on each formula.
+
+
+num_conflicts_var_rank.txt: the number of conflicts and runtime of
+ minisat_var_rank on each formula.
+
+
+final_activities/
+ Each file contains the final activity scores of all variables of a formula
+  in 300 minisat runs with different random seeds.
+     /bottom_averages.txt: 5 variables with the lowest mean final activity
+      scores in all formulas.
+     /mean_act_all.txt: contains the mean activity scores of all variables of
+      all formulas.
+     /skew_kat.txt:  skewness and kurtosis of activity scores of each formula.
+     /top_averages.txt: 5 variables with the highest mean final activity scores
+      in all formulas.
+     
+
+
+
+

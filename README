@@ -1,0 +1,16 @@
+/python all python programs. See README file in that folder for details
+/bash all bash files (only one so far..)
+/minisats minisat programs modified for different testing purposes. See README
+ file in that folder for details.
+  /minisat_act
+  /minisat_act_all
+  /minisat_pick_backbone
+  /minisat_var_rank
+/test_cases
+  /random random 3-sat formulas
+    - 100 formulas with 150 vars and C-to-V ratio 4.26
+    /other_samples formulas with 200 vars and 300 vars
+    /results test results on the 150 var formulas. See README file in that
+     folder for details.
+  /industrial 100 industrial cases
+

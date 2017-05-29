@@ -1,0 +1,62 @@
+activities_scaled.py
+
+  Usage: python activities_scaled.py <dimacs_file_name> <random_seed> <out_file_name> 
+
+  Description: run minisat on the dimacs file that represents a sat instance with random
+   seed as a parameter for minisat, append the following line to the out_file:
+       scaled final activity score of each variable + runtime of minisat + # of conflicts
+  Note 1: the activity score is used by the VSIDS heuristics to pick the next braching variable.  
+  Note 2: scaling is done by make the largest raw activity score 100, and scale down the other
+   activity scores proportionally.
+
+
+activities_unscaled.py
+
+  Same as activities_scaled.py execpt the raw activity scores are recorded.
+
+
+activities_over_time.py
+
+  Usage: python activities_over_time.py <dimacs_file_name> <random_seed> <out_file_name> 
+
+  Description: run minisat on the dimacs file that represents a sat instance with random
+   seed as a parameter for minisat, record the activity score of each variable whenever
+   DPLL algorithm pick a new branching variable. The data is saved to out_file as a comma separated
+   text file, each line contains
+   	variable name +  activity scores of a variable
+
+
+analyze_formula.py
+
+  Usage: python analyze_formula.py <dimacs_file_name>
+  
+  Description: takes in a (3)sat formula, print out the
+    1. VIG degree
+    2. VCG degrees
+    3. ratio of positive literal occurrence to negative literal occurrence
+    4. occurrence
+  of each variable.
+
+
+backbones.py
+
+  Usage: python backbones.py <dimacs_file_name>
+  
+  Description: takes in a (3)sat formula, print out the backbone variables of the formula
+   (variables that has the same value in each solution).
+
+
+minisat_var_rank.py
+
+  Usage: python minisat_var_rank.py <dimacs_file_name> <out_file_name>
+
+  Description: Run modified minisat that picks the available variable with the highest VIG
+   degree as the branching heuristics. Append the result to the out_file as a line like:
+   	  <dimacs_file_name>, Conflict, CPU time
+
+
+random_ksat.py
+
+  Usage: python random_ksat.py <numvars> <numclauses> <outputfile>
+
+  Description: generate random 3sat instance
